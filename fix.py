@@ -1,26 +1,23 @@
-<div align="center">
-<img src="beta_logo.jpg" alt="Beta Chapter Logo" width="200"/>
-</div>
-
-# ğŸš€ Alpha Phi Alpha AI Learning Path
+# coding: utf-8
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write("""# íº€ Alpha AI Learning Plan
 ## "Learning AI, Together" - Beta Chapter
-
-
-**Created by Sean Gayle, Beta '91**
 
 Welcome, Brothers. This repository contains everything you need to master AI tools and leverage them for career growth, business scaling, and competitive advantage.
 
+**Created by Sean Gayle, Beta '91**
+
 ---
 
-## ğŸ“ What's Inside
+## í³ What's Inside
 
-### ğŸ“– Learning Materials
+### í³– Learning Materials
 - **[`LEARNING_PLAN.md`](LEARNING_PLAN.md)** - The complete 4-week AI learning curriculum with video links and structured phases
+- **[`QUICK_REFERENCE.md`](QUICK_REFERENCE.md)** - Quick reference guide for AI tools and workflows
 - **[`alpha_learning_flowchart.svg`](alpha_learning_flowchart.svg)** - Visual flowchart showing your learning journey from start to mastery
 - **[`alpha_learning_flowchart.mmd`](alpha_learning_flowchart.mmd)** - Mermaid diagram version (can be rendered on GitHub)
-- **[`QUICK_REFERENCE.md`](QUICK_REFERENCE.md)** - Quick reference guide for AI tools and workflows
 
-### ğŸ¯ Quick Start
+### í¾¯ Quick Start
 1. Start with [`LEARNING_PLAN.md`](LEARNING_PLAN.md)
 2. Follow the 4 phases in order
 3. Complete the assignment in Week 4
@@ -28,7 +25,7 @@ Welcome, Brothers. This repository contains everything you need to master AI too
 
 ---
 
-## ğŸ“ The Path: 4 Weeks to AI Mastery
+## í¾“ The Path: 4 Weeks to AI Mastery
 
 ### Phase 1: Understand the Power (Week 1)
 - Learn Perplexity basics for market research
@@ -52,13 +49,13 @@ Welcome, Brothers. This repository contains everything you need to master AI too
 
 ---
 
-## ğŸ¯ Your Assignment
+## ï¿½ï¿½ Your Assignment
 
 After 4 weeks, you'll pick ONE workflow that matches your business needs and run a real experiment. This isn't theoryâ€”it's about building the skill to think strategically WITH AI as your team.
 
 ---
 
-## ğŸ’° The ROI
+## í²° The ROI
 
 - **Cost**: Free to start, ~$20/month for premium tools
 - **Time Investment**: ~4 hours per week for 4 weeks
@@ -66,13 +63,13 @@ After 4 weeks, you'll pick ONE workflow that matches your business needs and run
 
 ---
 
-## ğŸ‘¥ Community
+## í±¥ Community
 
 This is a Beta Chapter initiative led by Sean (@msftsean), Director of AI Engineering at Microsoft. Share your progress, ask questions, and help your brothers level up.
 
 ---
 
-## ğŸ”— Key Resources
+## í´— Key Resources
 
 - **Perplexity**: https://www.perplexity.ai
 - **NotebookLM**: https://notebooklm.google.com
@@ -95,7 +92,7 @@ This is a Beta Chapter initiative led by Sean (@msftsean), Director of AI Engine
 
 ---
 
-## ğŸ“ Questions?
+## í³ Questions?
 
 Message your brother. This is a fraternity initiativeâ€”we're in this together.
 
@@ -103,6 +100,8 @@ Message your brother. This is a fraternity initiativeâ€”we're in this together.
 
 **Alpha Phi Alpha Fraternity, Inc.**
 **Beta Chapter**
-**"First of All, Servants of All, We Shall Transcend All"** ğŸ¤ğŸ†
+**"First of All, Servants of All, We Shall Transcend All"** í´í¿†
 
 *Last Updated: December 20, 2025*
+""")
+print("Fixed!")
