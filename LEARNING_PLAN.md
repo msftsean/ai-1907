@@ -1,3 +1,7 @@
+<div align="center">
+<img src="beta_logo.jpg" alt="Beta Chapter Logo" width="200"/>
+</div>
+
 # 🚀 AI Learning Plan for Alpha Phi Alpha Brothers
 ## Your 4-Week Path to AI Mastery
 

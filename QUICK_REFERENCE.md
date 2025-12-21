@@ -1,3 +1,7 @@
+<div align="center">
+<img src="beta_logo.jpg" alt="Beta Chapter Logo" width="200"/>
+</div>
+
 # 🎯 QUICK REFERENCE CARD
 ## Alpha AI Learning Path - Keep This Handy
 
