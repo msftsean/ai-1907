@@ -74,7 +74,7 @@
   <rect class="video-box" x="250" y="500" width="700" height="100" rx="8" stroke="#00ff88" stroke-width="3"/>
   <text class="text-title" x="600" y="530">🎬 Grace Leung: 8 AI Workflows</text>
   <text class="text-white-sm" x="600" y="550">The Game-Changer Video</text>
-  <text class="text-white-sm" x="600" y="570">17 min | Watch TWICE & Take Notes</text>
+  <text class="text-white-sm" x="600" y="570">17 min | Watch TWICE &amp; Take Notes</text>
   <text class="text-white-sm" x="600" y="590">⭐ "You don't need more tools, you need better workflows"</text>
 
   <!-- Arrow down -->
@@ -103,7 +103,7 @@
   <text class="text-white" x="400" y="920">📚 Tina Huang</text>
   <text class="text-white-sm" x="400" y="940">AI for Business Growth</text>
   <text class="text-white-sm" x="400" y="960">AI for Productivity Playlist</text>
-  <text class="text-white-sm" x="400" y="980">& Business AI Playlist</text>
+  <text class="text-white-sm" x="400" y="980">&amp; Business AI Playlist</text>
 
   <rect class="insight-box" x="650" y="890" width="350" height="100" rx="8"/>
   <text class="text-white" x="825" y="920">🔍 BUILD THIS SKILL</text>
@@ -118,7 +118,7 @@
   <!-- PHASE 4 -->
   <rect class="phase-box" x="300" y="1030" width="600" height="70" rx="10"/>
   <text class="text-title" x="600" y="1055">⚙️ PHASE 4: PUT IT TO WORK</text>
-  <text class="text-week" x="600" y="1090">Week 3-4 | Automation & Execution</text>
+  <text class="text-week" x="600" y="1090">Week 3-4 | Automation &amp; Execution</text>
 
   <!-- Arrow down -->
   <path class="arrow" d="M 600 1100 L 600 1140"/>
@@ -126,7 +126,7 @@
   <!-- Video 5 -->
   <rect class="video-box" x="250" y="1140" width="700" height="100" rx="8"/>
   <text class="text-white" x="600" y="1170">🛠️ Enovair: AI for Business Automation</text>
-  <text class="text-white-sm" x="600" y="1190">Learn to Automate Decisions & Scale</text>
+  <text class="text-white-sm" x="600" y="1190">Learn to Automate Decisions &amp; Scale</text>
   <text class="text-white-sm" x="600" y="1210">From Research to Action</text>
   <text class="text-white-sm" x="600" y="1230">Free Up Time for Strategic Thinking</text>
 
