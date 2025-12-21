@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Quick Reference Card - Beta Chapter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4ff;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #00ff88;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 20px 0;
+            background: linear-gradient(135deg, #00d4ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #00d4ff;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: #00ff88;
+            margin: 25px 0 15px 0;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.1em;
+            color: #ffd700;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: #e0e0e0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(0, 212, 255, 0.05);
+        }
+
+        td a {
+            color: #00ff88;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        .star-badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+
+        .workflow-card {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border-left: 4px solid #00d4ff;
+            transition: all 0.3s ease;
+        }
+
+        .workflow-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.2);
+        }
+
+        .workflow-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff, #00ff88);
+            color: #1a1a2e;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .question-box {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .question-box h4 {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        .question-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .question-box li {
+            padding: 8px 0;
+            color: #e0e0e0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .question-box li::before {
+            content: "?";
+            color: #ffd700;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .checklist {
+            background: rgba(0, 255, 136, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 2px solid #00ff88;
+        }
+
+        .checklist h4 {
+            color: #00ff88;
+            margin-bottom: 15px;
+        }
+
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 10px 0;
+            color: #e0e0e0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li::before {
+            content: "&#x2610;";
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .experiment-template {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        .experiment-template .label {
+            color: #00d4ff;
+            font-weight: bold;
+        }
+
+        .experiment-template .placeholder {
+            color: #888;
+            font-style: italic;
+        }
+
+        .tool-table td:first-child {
+            font-weight: 600;
+            color: #00d4ff;
+        }
+
+        .success-metrics {
+            list-style: none;
+            padding: 0;
+        }
+
+        .success-metrics li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            color: #e0e0e0;
+        }
+
+        .success-metrics li::before {
+            content: "&#x2705;";
+            position: absolute;
+            left: 0;
+        }
+
+        .big-idea {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(0, 255, 136, 0.2));
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            border: 2px solid rgba(0, 212, 255, 0.4);
+        }
+
+        .big-idea h2 {
+            border-bottom: none;
+            margin: 0 0 20px 0;
+        }
+
+        .big-idea p {
+            font-size: 1.3em;
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .big-idea .emphasis {
+            color: #00ff88;
+            font-weight: 600;
+        }
+
+        .quick-links {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .quick-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .quick-links li {
+            padding: 10px 0;
+            color: #e0e0e0;
+        }
+
+        .quick-links code {
+            background: rgba(0, 212, 255, 0.2);
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: #00d4ff;
+            font-family: 'Courier New', monospace;
+        }
+
+        .closing {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .closing p {
+            margin: 10px 0;
+            color: #ccc;
+        }
+
+        .closing .fraternity {
+            color: #ffd700;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        strong {
+            color: #00ff88;
+        }
+
+        a {
+            color: #00d4ff;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            th, td {
+                padding: 10px 8px;
+            }
+
+            .big-idea {
+                padding: 25px;
+            }
+
+            .big-idea p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&#8592; Back to Home</a>
+
+        <div class="logo-container">
+            <img src="../assets/beta_logo.jpg" alt="Beta Chapter Logo" width="150">
+        </div>
+
+        <h1>&#x1F3AF; QUICK REFERENCE CARD</h1>
+        <p class="subtitle">Alpha AI Learning Path - Keep This Handy</p>
+
+        <!-- Videos Section -->
+        <div class="section">
+            <h2>&#x1F4FA; VIDEOS YOU NEED TO WATCH</h2>
+
+            <h3>PHASE 1: Foundation (Week 1)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Video</th>
+                        <th>Creator</th>
+                        <th>Length</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Perplexity + NotebookLM Workflow</td>
+                        <td>Grace Leung</td>
+                        <td>20 min</td>
+                        <td><a href="https://www.youtube.com/watch?v=27AxmEh3qEA" target="_blank" rel="noopener noreferrer">Watch &#x1F517;</a></td>
+                    </tr>
+                    <tr>
+                        <td>Best Ways to Use NotebookLM</td>
+                        <td>Grace Leung</td>
+                        <td>15 min</td>
+                        <td><a href="https://www.youtube.com/watch?v=YmVZkl6KVUs" target="_blank" rel="noopener noreferrer">Watch &#x1F517;</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>PHASE 2: Workflows (Week 1-2)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Video</th>
+                        <th>Creator</th>
+                        <th>Length</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8 AI Workflows That Actually Work <span class="star-badge">&#x2B50;</span></td>
+                        <td>Grace Leung</td>
+                        <td>17 min</td>
+                        <td><a href="https://youtu.be/zFcxA9T_BWs" target="_blank" rel="noopener noreferrer">Watch &#x1F517;</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>PHASE 3: Deep Dive (Week 2-3)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Video</th>
+                        <th>Creator</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AI for Business Growth (Playlists)</td>
+                        <td>Tina Huang</td>
+                        <td><a href="https://www.youtube.com/@TinaHuang1" target="_blank" rel="noopener noreferrer">Channel &#x1F517;</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>PHASE 4: Automation (Week 3-4)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Video</th>
+                        <th>Creator</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AI for Business Automation</td>
+                        <td>Enovair</td>
+                        <td><a href="https://www.youtube.com/@Enovair" target="_blank" rel="noopener noreferrer">Channel &#x1F517;</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Key Workflows Section -->
+        <div class="section">
+            <h2>&#x1F3AF; THE 8 KEY WORKFLOWS (From Phase 2)</h2>
+
+            <div class="workflow-card">
+                <span class="workflow-number">1</span>
+                <strong>Perplexity + NotebookLM</strong> &#x2192; Deep Market Analysis
+            </div>
+
+            <div class="workflow-card">
+                <span class="workflow-number">2</span>
+                <strong>Claude Projects</strong> &#x2192; Reusable Business Processes
+            </div>
+
+            <div class="workflow-card">
+                <span class="workflow-number">3</span>
+                <strong>NotebookLM + Gemini</strong> &#x2192; Training Material Creation
+            </div>
+
+            <div class="workflow-card">
+                <span class="workflow-number">4</span>
+                <strong>Multi-Tool Chains</strong> &#x2192; Quick Visualizations
+            </div>
+        </div>
+
+        <!-- Questions Section -->
+        <div class="section">
+            <h2>&#x1F4A1; QUESTIONS TO ASK AS YOU LEARN</h2>
+
+            <div class="question-box">
+                <h4>Phase 1:</h4>
+                <ul>
+                    <li>What market intelligence could I find with Perplexity?</li>
+                    <li>What data do I have that NotebookLM could analyze?</li>
+                </ul>
+            </div>
+
+            <div class="question-box">
+                <h4>Phase 2:</h4>
+                <ul>
+                    <li>Which workflow applies to my biggest pain point?</li>
+                    <li>How could I chain these tools together?</li>
+                </ul>
+            </div>
+
+            <div class="question-box">
+                <h4>Phase 3:</h4>
+                <ul>
+                    <li>What are better questions to ask Perplexity?</li>
+                    <li>How do I frame competitive research?</li>
+                </ul>
+            </div>
+
+            <div class="question-box">
+                <h4>Phase 4:</h4>
+                <ul>
+                    <li>What task repeats weekly that I could automate?</li>
+                    <li>How much time would I save?</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Checklist Section -->
+        <div class="section">
+            <h2>&#x2705; YOUR WEEK-BY-WEEK CHECKLIST</h2>
+
+            <div class="checklist">
+                <h4>Week 1</h4>
+                <ul>
+                    <li>Watch Grace Leung Perplexity + NotebookLM (20 min)</li>
+                    <li>Watch Grace Leung NotebookLM Best Ways (15 min)</li>
+                    <li>Take notes on how to apply to your business</li>
+                    <li>Message me when done</li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h4>Week 2</h4>
+                <ul>
+                    <li>Watch 8 AI Workflows (17 min) - TWICE</li>
+                    <li>Take detailed notes on each workflow</li>
+                    <li>Identify 3 workflows that could help you</li>
+                    <li>Think about which ONE to experiment with</li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h4>Week 3</h4>
+                <ul>
+                    <li>Watch Tina Huang playlists (AI for Productivity &amp; Business AI)</li>
+                    <li>Practice asking Perplexity better questions</li>
+                    <li>Start Enovair videos</li>
+                    <li>Decide on your ONE workflow experiment</li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h4>Week 4</h4>
+                <ul>
+                    <li>Finish Enovair videos</li>
+                    <li><strong>RUN YOUR EXPERIMENT</strong> (30-60 min max)</li>
+                    <li>Document what you discovered</li>
+                    <li>Message your brother with results</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experiment Template -->
+        <div class="section">
+            <h2>&#x1F680; YOUR EXPERIMENT TEMPLATE</h2>
+            <p>Use This Format to Document Your Results:</p>
+
+            <div class="experiment-template">
+                <p><span class="label">EXPERIMENT TITLE:</span><br><span class="placeholder">[What workflow did you try?]</span></p>
+                <p><span class="label">BUSINESS PAIN POINT:</span><br><span class="placeholder">[What problem were you solving?]</span></p>
+                <p><span class="label">TOOLS USED:</span><br><span class="placeholder">[Which tools did you combine?]</span></p>
+                <p><span class="label">TIME INVESTED:</span><br><span class="placeholder">[How long did it take?]</span></p>
+                <p><span class="label">KEY DISCOVERY:</span><br><span class="placeholder">[What did you learn?]</span></p>
+                <p><span class="label">NEXT STEPS:</span><br><span class="placeholder">[What will you do with this?]</span></p>
+            </div>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="section">
+            <h2>&#x1F4B0; THE TOOLS YOU NEED</h2>
+
+            <table class="tool-table">
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Cost</th>
+                        <th>Why You Need It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Perplexity</td>
+                        <td>Free / $20/mo</td>
+                        <td>Research Assistant</td>
+                    </tr>
+                    <tr>
+                        <td>NotebookLM</td>
+                        <td>Free</td>
+                        <td>Intelligence Generator</td>
+                    </tr>
+                    <tr>
+                        <td>Claude</td>
+                        <td>Free / $20/mo</td>
+                        <td>Strategy Partner</td>
+                    </tr>
+                    <tr>
+                        <td>Gemini</td>
+                        <td>Free</td>
+                        <td>Quick Visualizations</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="section">
+            <h2>&#x1F3AF; SUCCESS METRICS</h2>
+            <p style="color: #e0e0e0; margin-bottom: 20px;">After 4 weeks, you should be able to:</p>
+
+            <ul class="success-metrics">
+                <li>Explain what "chaining workflows" means</li>
+                <li>Identify which tools work best together</li>
+                <li>Design ONE workflow for your business</li>
+                <li>Run an experiment and measure results</li>
+                <li>Think strategically WITH AI as your team</li>
+            </ul>
+        </div>
+
+        <!-- Big Idea -->
+        <div class="big-idea">
+            <h2>&#x1F525; THE BIG IDEA</h2>
+            <p><span class="emphasis">You don't need more tools.</span></p>
+            <p><span class="emphasis">You need better workflows.</span></p>
+            <p style="margin-top: 20px; font-size: 1em; color: #ccc;">The guys who figure this out in the next 6 months will be operating at a completely different level than everyone else.</p>
+            <p style="margin-top: 15px; color: #ffd700; font-weight: 600; font-size: 1.2em;">Be that guy. &#x1F4AA;</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="section">
+            <h2>&#x1F4DE; QUICK LINKS</h2>
+
+            <div class="quick-links">
+                <ul>
+                    <li>&#x1F4D6; Learning Plan: <code><a href="learning-plan.html" style="color: #00d4ff;">learning-plan.html</a></code></li>
+                    <li>&#x1F5FA;&#xFE0F; Visual Flowchart: <code><a href="../assets/alpha_learning_flowchart.svg" target="_blank" rel="noopener noreferrer" style="color: #00d4ff;">alpha_learning_flowchart.svg</a></code></li>
+                    <li>&#x1F3E0; Home: <code><a href="../index.html" style="color: #00d4ff;">index.html</a></code></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Closing -->
+        <div class="closing">
+            <p style="font-size: 1.3em; color: #00ff88; font-weight: 600;">Let's go, Brother. &#x1F91D;&#x1F3C6;</p>
+            <p class="fraternity" style="margin-top: 20px;">Alpha Phi Alpha Fraternity, Inc. - Beta Chapter</p>
+        </div>
+    </div>
+</body>
+</html>

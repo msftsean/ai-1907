@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>AI Learning Plan - Beta Chapter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #00d4ff;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #00ff88;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 20px 0;
+            background: linear-gradient(135deg, #00d4ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #00d4ff;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: #00ff88;
+            margin: 25px 0 15px 0;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.3em;
+            color: #ffd700;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .author-note {
+            text-align: center;
+            font-style: italic;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: #e0e0e0;
+        }
+
+        .video-card {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #00d4ff;
+            transition: all 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.2);
+        }
+
+        .video-card h4 {
+            color: #00d4ff;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .video-card a {
+            color: #00ff88;
+            text-decoration: none;
+            font-weight: 600;
+            word-break: break-all;
+        }
+
+        .video-card a:hover {
+            text-decoration: underline;
+        }
+
+        .video-meta {
+            color: #ffd700;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+
+        .video-card p {
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        .game-changer {
+            background: rgba(255, 215, 0, 0.1);
+            border-left-color: #ffd700;
+        }
+
+        .game-changer h4 {
+            color: #ffd700;
+        }
+
+        .action-box {
+            background: rgba(0, 255, 136, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 2px solid #00ff88;
+        }
+
+        .action-box h4 {
+            color: #00ff88;
+            margin-bottom: 15px;
+        }
+
+        .action-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .action-box li {
+            padding: 8px 0;
+            color: #e0e0e0;
+        }
+
+        .action-box li::before {
+            content: "✅ ";
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(0, 212, 255, 0.05);
+        }
+
+        .highlight-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlight-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #e0e0e0;
+        }
+
+        .highlight-list li::before {
+            content: "•";
+            color: #00d4ff;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+
+        .bottom-line {
+            background: rgba(255, 107, 53, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            margin: 40px 0;
+        }
+
+        .bottom-line h2 {
+            color: #ff6b35;
+            border-bottom: none;
+            margin-top: 0;
+        }
+
+        .final-notes {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .final-notes ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .final-notes li {
+            padding: 8px 0;
+            color: #e0e0e0;
+        }
+
+        .closing {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .closing p {
+            margin: 10px 0;
+            color: #ccc;
+        }
+
+        .closing .fraternity {
+            color: #ffd700;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .phase-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff, #00ff88);
+            color: #1a1a2e;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #00ff88;
+        }
+
+        a {
+            color: #00d4ff;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .video-card {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&#8592; Back to Home</a>
+
+        <div class="logo-container">
+            <img src="../assets/beta_logo.jpg" alt="Beta Chapter Logo" width="150">
+        </div>
+
+        <h1>&#x1F680; AI Learning Plan for Alpha Phi Alpha Brothers</h1>
+        <p class="subtitle">Your 4-Week Path to AI Mastery</p>
+        <p class="author-note"><em>Sent with fraternity love from your brother at Microsoft AI Engineering</em></p>
+
+        <!-- Overview Section -->
+        <div class="section">
+            <h2>&#x1F4CB; Overview</h2>
+            <p>Brothers,</p>
+            <p>You asked how to learn about AI and how it applies to your businesses and careers. Here's the plan. This is the same framework I built for some of my most successful business mentees—it works because it's built on <strong>action, not theory</strong>.</p>
+            <p>Perplexity, NotebookLM, and automation aren't just shiny tools. They're <strong>revenue multipliers</strong> &#x1F4B0; and <strong>career accelerators</strong> &#x1F4C8; when you know how to leverage them strategically. And you don't need to be a coder. You just need to understand how to think strategically <strong>WITH AI as your team</strong>.</p>
+        </div>
+
+        <!-- Phase 1 -->
+        <div class="section">
+            <span class="phase-badge">WEEK 1</span>
+            <h2>&#x1F3AF; PHASE 1: UNDERSTAND THE POWER</h2>
+
+            <div class="video-card">
+                <h4>&#x1F4FA; Video 1: Grace Leung's Perplexity + NotebookLM Workflow</h4>
+                <a href="https://www.youtube.com/watch?v=27AxmEh3qEA" target="_blank" rel="noopener noreferrer">&#x1F517; https://www.youtube.com/watch?v=27AxmEh3qEA</a>
+                <p class="video-meta">&#x23F1;&#xFE0F; 20 min | &#x1F4CC; <strong>START HERE</strong></p>
+                <p>Grace shows you exactly how these two tools work together for market research, competitive analysis, and business strategy. This is the foundational "aha" moment. &#x1F4A1;</p>
+            </div>
+
+            <div class="video-card">
+                <h4>&#x1F4FA; Video 2: Grace Leung - Best Ways to Use NotebookLM</h4>
+                <a href="https://www.youtube.com/watch?v=YmVZkl6KVUs" target="_blank" rel="noopener noreferrer">&#x1F517; https://www.youtube.com/watch?v=YmVZkl6KVUs</a>
+                <p class="video-meta">&#x23F1;&#xFE0F; 15 min</p>
+                <p>Learn how to organize your data—business plans, market research, customer feedback—into something that generates actionable intelligence automatically. &#x1F9E0;</p>
+            </div>
+
+            <h3>&#x2728; Why These Two Matter</h3>
+            <p>They show you how:</p>
+            <ul class="highlight-list">
+                <li><strong>Perplexity</strong> &#x1F50D; hunts down market intelligence (competition, trends, customer pain points)</li>
+                <li><strong>NotebookLM</strong> &#x1F4DA; synthesizes your data into strategic insights</li>
+            </ul>
+            <p>That's directly applicable whether you're scaling a startup, managing teams, or building personal brand. &#x1F31F;</p>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="section">
+            <span class="phase-badge">WEEK 1-2</span>
+            <h2>&#x1F517; PHASE 2: SEE THE FULL PICTURE—AI WORKFLOWS</h2>
+
+            <div class="video-card game-changer">
+                <h4>&#x1F3AC; VIDEO OF THE YEAR — Grace Leung: 8 AI Workflows That Actually Work</h4>
+                <a href="https://youtu.be/zFcxA9T_BWs" target="_blank" rel="noopener noreferrer">&#x1F517; https://youtu.be/zFcxA9T_BWs</a>
+                <p class="video-meta">&#x23F1;&#xFE0F; 17 min | &#x1F31F; <strong>GAME-CHANGER</strong></p>
+                <p>This is the key insight: <strong>You don't need more tools. You need better workflows.</strong></p>
+                <p>Grace walks through 8 specific workflows that show you how to chain Perplexity + NotebookLM, Claude + Gemini, and others together to create a personal team of specialists.</p>
+            </div>
+
+            <h3>&#x1F3AF; Key Workflows for You</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Workflow</th>
+                        <th>Tools</th>
+                        <th>What It Does</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Deep Market Analysis</strong></td>
+                        <td>Perplexity + NotebookLM</td>
+                        <td>Competitive research, opportunity spotting</td>
+                        <td>&#x1F4CA; Strategic planning</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reusable Processes</strong></td>
+                        <td>Claude Projects</td>
+                        <td>Proposals, strategic docs, team workflows</td>
+                        <td>&#x1F4C4; Documentation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Training Materials</strong></td>
+                        <td>NotebookLM + Gemini</td>
+                        <td>Create courses, mentoring content</td>
+                        <td>&#x1F468;&#x200D;&#x1F3EB; Knowledge sharing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quick Visuals</strong></td>
+                        <td>Multiple Tools</td>
+                        <td>Pitches, presentations, client materials</td>
+                        <td>&#x1F3A8; Communications</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="action-box">
+                <h4>&#x1F4A1; Action Items</h4>
+                <ul>
+                    <li>Watch this one <strong>twice</strong></li>
+                    <li>Take notes on which workflows apply to YOUR business or role</li>
+                    <li>This is where it clicks—you'll see how to chain tools together like a personal team</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="section">
+            <span class="phase-badge">WEEK 2-3</span>
+            <h2>&#x1F393; PHASE 3: MASTER PERPLEXITY</h2>
+
+            <div class="video-card">
+                <h4>&#x1F4DA; Tina Huang: Using AI for Business Growth</h4>
+                <a href="https://www.youtube.com/@TinaHuang1" target="_blank" rel="noopener noreferrer">&#x1F517; https://www.youtube.com/@TinaHuang1</a>
+                <p class="video-meta">&#x1F4CC; Watch her "AI for Productivity" and "Business AI" playlists</p>
+                <p>Tina comes from a data science background but speaks directly to entrepreneurs and business leaders. She'll show you practical prompts for:</p>
+                <ul class="highlight-list">
+                    <li>&#x1F50D; Competitive research</li>
+                    <li>&#x1F4CA; Market sizing</li>
+                    <li>&#x1F4A1; Identifying business opportunities</li>
+                </ul>
+                <p>Her channel is a <strong>goldmine</strong> for "how do I actually use this today?" thinking.</p>
+            </div>
+
+            <h3>&#x1F4AA; Skill You're Building</h3>
+            <p>You're developing the muscle memory of asking AI the right questions. This is where Perplexity becomes YOUR research assistant. &#x1F916;</p>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="section">
+            <span class="phase-badge">WEEK 3-4</span>
+            <h2>&#x2699;&#xFE0F; PHASE 4: PUT IT TO WORK</h2>
+
+            <div class="video-card">
+                <h4>&#x1F6E0;&#xFE0F; Enovair: AI for Business Automation</h4>
+                <a href="https://www.youtube.com/@Enovair" target="_blank" rel="noopener noreferrer">&#x1F517; https://www.youtube.com/@Enovair</a>
+                <p>Their YouTube channel focuses on how business owners use AI tools to automate decisions and scale faster.</p>
+            </div>
+
+            <h3>&#x1F3AF; What You'll Learn</h3>
+            <p>How to go from <strong>"research"</strong> to <strong>"action"</strong> &#x1F680;—automating the work that's eating your time so you can focus on strategy and growth.</p>
+        </div>
+
+        <!-- Real Assignment -->
+        <div class="section">
+            <span class="phase-badge">WEEK 4</span>
+            <h2>&#x1F3AC; YOUR REAL ASSIGNMENT</h2>
+            <p>Here's what separates the guys who talk about AI from the guys who <strong>actually use it</strong> &#x1F4AA;:</p>
+            <ol style="margin: 20px 0; padding-left: 25px; color: #e0e0e0;">
+                <li style="padding: 8px 0;"><strong>Pick ONE workflow</strong> from Grace's video that matches your biggest business pain point or opportunity</li>
+                <li style="padding: 8px 0;"><strong>Run ONE experiment</strong> using that workflow (30 min to 1 hour max)</li>
+                <li style="padding: 8px 0;"><strong>Message me</strong> what you discovered</li>
+            </ol>
+
+            <div class="action-box">
+                <h4>&#x26A1; This Is Non-Negotiable</h4>
+                <p style="color: #e0e0e0;">This isn't about binge-watching content. This is about understanding how to <strong>think like a strategist WITH AI as your team</strong>. That's the real skill that's going to separate the top performers from everyone else in your industry. &#x1F4C8;</p>
+            </div>
+        </div>
+
+        <!-- How to Use -->
+        <div class="section">
+            <h2>&#x1F4CB; How to Use This Plan</h2>
+            <ul class="highlight-list">
+                <li><strong>Watch in order</strong>—they build on each other</li>
+                <li><strong>Take notes</strong> as you watch (or better yet, use NotebookLM to upload the video transcripts and have it extract key insights for you—meta, right? &#x1F604;)</li>
+                <li><strong>Pause and think</strong> about your business or career—don't just consume passively</li>
+                <li><strong>Message me</strong> when you finish Week 1—we'll design your first "AI-powered workflow" that actually applies to what you're building</li>
+            </ul>
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="bottom-line">
+            <h2>&#x1F4B0; The Bottom Line</h2>
+            <p style="color: #e0e0e0;">You've got:</p>
+            <ul style="list-style: none; padding: 0; margin: 15px 0;">
+                <li style="padding: 5px 0; color: #e0e0e0;">&#x1F3E2; Businesses to scale</li>
+                <li style="padding: 5px 0; color: #e0e0e0;">&#x1F465; Teams to lead</li>
+                <li style="padding: 5px 0; color: #e0e0e0;">&#x1F4C8; Careers to advance</li>
+            </ul>
+            <p style="color: #e0e0e0;">These tools aren't distractions. <strong>They're force multipliers.</strong> &#x26A1;</p>
+            <p style="color: #e0e0e0; margin-top: 15px;">The guys who understand how to leverage AI strategically in the next 5 years will be operating at a <strong>completely different level</strong>.</p>
+            <p style="color: #ffd700; margin-top: 15px; font-weight: 600;">Let's make sure you're one of them. &#x1F525;</p>
+        </div>
+
+        <!-- Final Notes -->
+        <div class="final-notes">
+            <h3 style="color: #00d4ff; margin-bottom: 15px;">&#x1F4AC; Final Notes</h3>
+            <ul>
+                <li>&#x2022; These tools are <strong>free</strong> to start or ~$20/month</li>
+                <li>&#x2022; The ROI on your time is <strong>incredible</strong></li>
+                <li>&#x2022; Your competition is sleeping on this</li>
+                <li>&#x2022; You won't be &#x1F4AA;</li>
+            </ul>
+        </div>
+
+        <!-- Closing -->
+        <div class="closing">
+            <p style="font-size: 1.3em; color: #00ff88; font-weight: 600;">Let's go, Brothers. &#x1F91D;&#x1F3C6;</p>
+            <p><em>— Sent with fraternity love from your brother at Microsoft AI Engineering</em></p>
+            <p class="fraternity" style="margin-top: 20px;">Alpha Phi Alpha Fraternity, Inc.</p>
+            <p class="fraternity">Beta Chapter</p>
+        </div>
+    </div>
+</body>
+</html>
