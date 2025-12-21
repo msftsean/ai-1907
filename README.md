@@ -125,9 +125,9 @@ Message your brother. This is a fraternity initiative—we're in this together.
 
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
-| 1.0 | Dec 20, 2025 | Initial release with complete 4-week curriculum | Sean Gayle, Beta '91 |
-| 1.0 | Dec 20, 2025 | Added Beta Chapter logo and documentation links | Sean Gayle, Beta '91 |
-| 1.0 | Dec 20, 2025 | Added status bars and revision matrix | Sean Gayle, Beta '91 |
+| 1.0 | Dec 20, 2025 | Initial release with complete 4-week curriculum | Sean Gayle |
+| 1.0 | Dec 20, 2025 | Added Beta Chapter logo and documentation links | Sean Gayle |
+| 1.0 | Dec 20, 2025 | Added status bars and revision matrix | Sean Gayle |
 
 ---
 
@@ -141,7 +141,7 @@ To my brothers: May this resource help you harness the power of AI to build stro
 
 ---
 
-*For questions, updates, or contributions, contact Sean Gayle (Beta '91) at [@msftsean](https://github.com/msftsean)*
+*For questions, updates, or contributions, contact Sean Gayle at [@msftsean](https://github.com/msftsean)*
 ---
 
 **Alpha Phi Alpha Fraternity, Inc.**
