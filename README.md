@@ -101,6 +101,49 @@ Message your brother. This is a fraternity initiative—we're in this together.
 
 ---
 
+---
+
+## 📊 Project Status
+
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Version](https://img.shields.io/badge/Version-1.0-blue)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-Dec%202025-orange)
+![License](https://img.shields.io/badge/License-Fraternity%20Use-yellow)
+
+### Learning Path Progress
+
+| Phase | Content | Status | Duration |
+|-------|---------|--------|----------|
+| 📖 Phase 1 | Understand the Power | ✅ Complete | Week 1 |
+| 🔄 Phase 2 | See the Full Picture | ✅ Complete | Week 1-2 |
+| 🎯 Phase 3 | Master Perplexity | ✅ Complete | Week 2-3 |
+| 🚀 Phase 4 | Put It to Work | ✅ Complete | Week 3-4 |
+
+---
+
+## 📋 Revision Matrix
+
+| Version | Date | Changes | Author |
+|---------|------|---------|--------|
+| 1.0 | Dec 20, 2025 | Initial release with complete 4-week curriculum | Sean Gayle, Beta '91 |
+| 1.0 | Dec 20, 2025 | Added Beta Chapter logo and documentation links | Sean Gayle, Beta '91 |
+| 1.0 | Dec 20, 2025 | Added status bars and revision matrix | Sean Gayle, Beta '91 |
+
+---
+
+## 💝 Inspiration
+
+This learning path was created with love and fraternity, inspired by a Zoom call celebrating the **118th Anniversary of the Chartering of the Beta Chapter of Alpha Phi Alpha Fraternity, Inc.** on December 20th, 2025.
+
+To my brothers: May this resource help you harness the power of AI to build stronger businesses, serve our communities more effectively, and continue our legacy of excellence.
+
+**"First of All, Servants of All, We Shall Transcend All"**
+
+---
+
+*For questions, updates, or contributions, contact Sean Gayle (Beta '91) at [@msftsean](https://github.com/msftsean)*
+---
+
 **Alpha Phi Alpha Fraternity, Inc.**
 **Beta Chapter**
 **"First of All, Servants of All, We Shall Transcend All"** 🤝🏆
