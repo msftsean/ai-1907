@@ -15,105 +15,106 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0d0d0d 100%);
             color: #fff;
             line-height: 1.6;
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-        
+
         .logo-container {
             text-align: center;
             margin-bottom: 30px;
         }
-        
+
         .logo-container img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.4);
+            border: 3px solid #D4AF37;
         }
-        
+
         h1 {
             text-align: center;
             font-size: 2.5em;
             margin: 20px 0;
-            background: linear-gradient(135deg, #00d4ff, #00ff88);
+            background: linear-gradient(135deg, #FFD700, #D4AF37, #CFB53B);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         h2 {
             text-align: center;
             font-size: 1.5em;
-            color: #00d4ff;
+            color: #D4AF37;
             margin-bottom: 40px;
             font-weight: 300;
         }
-        
+
         .author {
             text-align: center;
             font-size: 1.1em;
-            color: #ffd700;
+            color: #B22222;
             margin-bottom: 30px;
             font-weight: 500;
         }
-        
+
         .intro {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(212, 175, 55, 0.05);
             padding: 30px;
             border-radius: 15px;
             margin-bottom: 40px;
-            border: 1px solid rgba(0, 212, 255, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.3);
             backdrop-filter: blur(10px);
         }
-        
+
         .resources {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-bottom: 40px;
         }
-        
+
         .resource-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(212, 175, 55, 0.05);
             padding: 25px;
             border-radius: 15px;
-            border: 1px solid rgba(0, 212, 255, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.2);
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
             display: block;
         }
-        
+
         .resource-card:hover {
             transform: translateY(-5px);
-            border-color: #00d4ff;
-            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
+            border-color: #D4AF37;
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
         }
-        
+
         .resource-card h3 {
             font-size: 1.5em;
             margin-bottom: 10px;
-            color: #00d4ff;
+            color: #FFD700;
         }
-        
+
         .resource-card p {
             color: #ccc;
             font-size: 0.95em;
         }
-        
+
         .stats {
             display: flex;
             justify-content: center;
@@ -121,59 +122,63 @@
             margin: 40px 0;
             flex-wrap: wrap;
         }
-        
+
         .stat {
-            background: rgba(0, 212, 255, 0.1);
+            background: rgba(212, 175, 55, 0.1);
             padding: 15px 30px;
             border-radius: 25px;
-            border: 1px solid rgba(0, 212, 255, 0.3);
+            border: 1px solid rgba(212, 175, 55, 0.3);
         }
-        
+
         .stat strong {
-            color: #00d4ff;
+            color: #FFD700;
             font-size: 1.2em;
         }
-        
+
         .inspiration {
-            background: rgba(255, 107, 53, 0.1);
+            background: rgba(178, 34, 34, 0.15);
             padding: 30px;
             border-radius: 15px;
-            border: 1px solid rgba(255, 107, 53, 0.3);
+            border: 1px solid rgba(178, 34, 34, 0.4);
             margin-top: 40px;
             text-align: center;
         }
-        
+
         .inspiration h3 {
-            color: #ff6b35;
+            color: #B22222;
             margin-bottom: 15px;
             font-size: 1.5em;
         }
-        
+
         .motto {
             font-size: 1.2em;
             font-weight: bold;
-            color: #ffd700;
+            color: #FFD700;
             margin-top: 20px;
             font-style: italic;
         }
-        
+
         footer {
             text-align: center;
             margin-top: 60px;
             padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
             color: #888;
         }
-        
+
+        footer a {
+            color: #D4AF37;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2em;
             }
-            
+
             h2 {
                 font-size: 1.2em;
             }
-            
+
             .resources {
                 grid-template-columns: 1fr;
             }
@@ -185,49 +190,49 @@
         <div class="logo-container">
             <img src="assets/beta_logo.jpg" alt="Beta Chapter Logo">
         </div>
-        
+
         <h1>🚀 Alpha AI Learning Path</h1>
         <h2>"Learning AI, Together" - Beta Chapter</h2>
         <p class="author">Created by Sean Gayle, Beta '91</p>
-        
+
         <div class="intro">
             <p>Welcome, Brothers. This resource contains everything you need to master AI tools and leverage them for career growth, business scaling, and competitive advantage.</p>
         </div>
-        
+
         <div class="stats">
             <div class="stat"><strong>4 Weeks</strong> to Mastery</div>
             <div class="stat"><strong>~4 Hours</strong> per Week</div>
             <div class="stat"><strong>Free</strong> to Start</div>
         </div>
-        
+
         <div class="resources">
             <a href="docs/learning-plan.html" class="resource-card">
                 <h3>📖 Learning Plan</h3>
                 <p>Complete 4-week AI learning curriculum with video links and structured phases</p>
             </a>
-            
+
             <a href="docs/quick-reference.html" class="resource-card">
                 <h3>🎯 Quick Reference</h3>
                 <p>Quick reference guide for AI tools and workflows</p>
             </a>
-            
+
             <a href="assets/alpha_learning_flowchart.svg" class="resource-card">
                 <h3>🗺️ Learning Flowchart</h3>
                 <p>Visual flowchart showing your learning journey from start to mastery</p>
             </a>
         </div>
-        
+
         <div class="inspiration">
             <h3>💝 Inspiration</h3>
             <p>This learning path was created with love and fraternity, inspired by a Zoom call celebrating the <strong>118th Anniversary of the Chartering of the Beta Chapter of Alpha Phi Alpha Fraternity, Inc.</strong> on December 20th, 2025.</p>
             <p style="margin-top: 15px;">To my brothers: May this resource help you harness the power of AI to build stronger businesses, serve our communities more effectively, and continue our legacy of excellence.</p>
             <p class="motto">"First of All, Servants of All, We Shall Transcend All"</p>
         </div>
-        
+
         <footer>
             <p><strong>Alpha Phi Alpha Fraternity, Inc.</strong></p>
             <p><strong>Beta Chapter</strong></p>
-            <p style="margin-top: 20px;">For questions or contributions, contact Sean Gayle at <a href="https://github.com/msftsean" style="color: #00d4ff;">@msftsean</a></p>
+            <p style="margin-top: 20px;">For questions or contributions, contact Sean Gayle at <a href="https://github.com/msftsean">@msftsean</a></p>
             <p style="margin-top: 10px; font-size: 0.9em;">Last Updated: December 20, 2025</p>
         </footer>
     </div>

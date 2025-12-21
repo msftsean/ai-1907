@@ -18,7 +18,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0d0d0d 100%);
             color: #fff;
             line-height: 1.6;
             min-height: 100vh;
@@ -33,7 +33,7 @@
 
         .back-link {
             display: inline-block;
-            color: #00d4ff;
+            color: #D4AF37;
             text-decoration: none;
             margin-bottom: 30px;
             font-size: 1em;
@@ -41,7 +41,7 @@
         }
 
         .back-link:hover {
-            color: #00ff88;
+            color: #FFD700;
         }
 
         .logo-container {
@@ -53,14 +53,15 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.4);
+            border: 3px solid #D4AF37;
         }
 
         h1 {
             text-align: center;
             font-size: 2.5em;
             margin: 20px 0;
-            background: linear-gradient(135deg, #00d4ff, #00ff88);
+            background: linear-gradient(135deg, #FFD700, #D4AF37, #CFB53B);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -68,32 +69,32 @@
 
         h2 {
             font-size: 1.5em;
-            color: #00d4ff;
+            color: #D4AF37;
             margin: 40px 0 20px 0;
             padding-bottom: 10px;
-            border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
         }
 
         h3 {
             font-size: 1.2em;
-            color: #00ff88;
+            color: #FFD700;
             margin: 25px 0 15px 0;
         }
 
         .subtitle {
             text-align: center;
             font-size: 1.1em;
-            color: #ffd700;
+            color: #B22222;
             margin-bottom: 40px;
             font-weight: 400;
         }
 
         .section {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(212, 175, 55, 0.05);
             padding: 30px;
             border-radius: 15px;
             margin-bottom: 30px;
-            border: 1px solid rgba(0, 212, 255, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.2);
             backdrop-filter: blur(10px);
         }
 
@@ -106,14 +107,14 @@
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(212, 175, 55, 0.03);
             border-radius: 10px;
             overflow: hidden;
         }
 
         th {
-            background: rgba(0, 212, 255, 0.2);
-            color: #00d4ff;
+            background: rgba(212, 175, 55, 0.2);
+            color: #FFD700;
             padding: 15px;
             text-align: left;
             font-weight: 600;
@@ -121,7 +122,7 @@
 
         td {
             padding: 12px 15px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
             color: #e0e0e0;
         }
 
@@ -130,11 +131,11 @@
         }
 
         tr:hover td {
-            background: rgba(0, 212, 255, 0.05);
+            background: rgba(212, 175, 55, 0.05);
         }
 
         td a {
-            color: #00ff88;
+            color: #FFD700;
             text-decoration: none;
             word-break: break-all;
         }
@@ -145,8 +146,8 @@
 
         .star-badge {
             display: inline-block;
-            background: #ffd700;
-            color: #1a1a2e;
+            background: #B22222;
+            color: #fff;
             padding: 2px 8px;
             border-radius: 10px;
             font-size: 0.8em;
@@ -155,23 +156,23 @@
         }
 
         .workflow-card {
-            background: rgba(0, 212, 255, 0.1);
+            background: rgba(212, 175, 55, 0.08);
             padding: 20px;
             border-radius: 12px;
             margin: 15px 0;
-            border-left: 4px solid #00d4ff;
+            border-left: 4px solid #D4AF37;
             transition: all 0.3s ease;
         }
 
         .workflow-card:hover {
             transform: translateX(5px);
-            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.2);
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
         }
 
         .workflow-number {
             display: inline-block;
-            background: linear-gradient(135deg, #00d4ff, #00ff88);
-            color: #1a1a2e;
+            background: linear-gradient(135deg, #D4AF37, #FFD700);
+            color: #0a0a0a;
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -182,15 +183,15 @@
         }
 
         .question-box {
-            background: rgba(255, 215, 0, 0.1);
+            background: rgba(178, 34, 34, 0.1);
             padding: 20px;
             border-radius: 12px;
             margin: 20px 0;
-            border: 1px solid rgba(255, 215, 0, 0.3);
+            border: 1px solid rgba(178, 34, 34, 0.3);
         }
 
         .question-box h4 {
-            color: #ffd700;
+            color: #B22222;
             margin-bottom: 15px;
         }
 
@@ -208,22 +209,22 @@
 
         .question-box li::before {
             content: "?";
-            color: #ffd700;
+            color: #B22222;
             position: absolute;
             left: 0;
             font-weight: bold;
         }
 
         .checklist {
-            background: rgba(0, 255, 136, 0.1);
+            background: rgba(212, 175, 55, 0.1);
             padding: 25px;
             border-radius: 12px;
             margin: 20px 0;
-            border: 2px solid #00ff88;
+            border: 2px solid #D4AF37;
         }
 
         .checklist h4 {
-            color: #00ff88;
+            color: #FFD700;
             margin-bottom: 15px;
         }
 
@@ -244,6 +245,7 @@
             position: absolute;
             left: 0;
             font-size: 1.2em;
+            color: #D4AF37;
         }
 
         .experiment-template {
@@ -252,11 +254,11 @@
             border-radius: 12px;
             margin: 20px 0;
             font-family: 'Courier New', monospace;
-            border: 1px solid rgba(0, 212, 255, 0.3);
+            border: 1px solid rgba(212, 175, 55, 0.3);
         }
 
         .experiment-template .label {
-            color: #00d4ff;
+            color: #D4AF37;
             font-weight: bold;
         }
 
@@ -267,7 +269,7 @@
 
         .tool-table td:first-child {
             font-weight: 600;
-            color: #00d4ff;
+            color: #D4AF37;
         }
 
         .success-metrics {
@@ -289,12 +291,12 @@
         }
 
         .big-idea {
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(0, 255, 136, 0.2));
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(178, 34, 34, 0.15));
             padding: 40px;
             border-radius: 20px;
             text-align: center;
             margin: 40px 0;
-            border: 2px solid rgba(0, 212, 255, 0.4);
+            border: 2px solid rgba(212, 175, 55, 0.4);
         }
 
         .big-idea h2 {
@@ -309,12 +311,12 @@
         }
 
         .big-idea .emphasis {
-            color: #00ff88;
+            color: #FFD700;
             font-weight: 600;
         }
 
         .quick-links {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(212, 175, 55, 0.05);
             padding: 20px;
             border-radius: 12px;
             margin: 20px 0;
@@ -331,10 +333,10 @@
         }
 
         .quick-links code {
-            background: rgba(0, 212, 255, 0.2);
+            background: rgba(212, 175, 55, 0.2);
             padding: 3px 8px;
             border-radius: 4px;
-            color: #00d4ff;
+            color: #D4AF37;
             font-family: 'Courier New', monospace;
         }
 
@@ -342,7 +344,7 @@
             text-align: center;
             margin-top: 50px;
             padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
         }
 
         .closing p {
@@ -351,17 +353,17 @@
         }
 
         .closing .fraternity {
-            color: #ffd700;
+            color: #FFD700;
             font-weight: 600;
             font-size: 1.1em;
         }
 
         strong {
-            color: #00ff88;
+            color: #FFD700;
         }
 
         a {
-            color: #00d4ff;
+            color: #D4AF37;
         }
 
         @media (max-width: 768px) {
@@ -672,7 +674,7 @@
             <p><span class="emphasis">You don't need more tools.</span></p>
             <p><span class="emphasis">You need better workflows.</span></p>
             <p style="margin-top: 20px; font-size: 1em; color: #ccc;">The guys who figure this out in the next 6 months will be operating at a completely different level than everyone else.</p>
-            <p style="margin-top: 15px; color: #ffd700; font-weight: 600; font-size: 1.2em;">Be that guy. &#x1F4AA;</p>
+            <p style="margin-top: 15px; color: #FFD700; font-weight: 600; font-size: 1.2em;">Be that guy. &#x1F4AA;</p>
         </div>
 
         <!-- Quick Links -->
@@ -681,16 +683,16 @@
 
             <div class="quick-links">
                 <ul>
-                    <li>&#x1F4D6; Learning Plan: <code><a href="learning-plan.html" style="color: #00d4ff;">learning-plan.html</a></code></li>
-                    <li>&#x1F5FA;&#xFE0F; Visual Flowchart: <code><a href="../assets/alpha_learning_flowchart.svg" target="_blank" rel="noopener noreferrer" style="color: #00d4ff;">alpha_learning_flowchart.svg</a></code></li>
-                    <li>&#x1F3E0; Home: <code><a href="../index.html" style="color: #00d4ff;">index.html</a></code></li>
+                    <li>&#x1F4D6; Learning Plan: <code><a href="learning-plan.html">learning-plan.html</a></code></li>
+                    <li>&#x1F5FA;&#xFE0F; Visual Flowchart: <code><a href="../assets/alpha_learning_flowchart.svg" target="_blank" rel="noopener noreferrer">alpha_learning_flowchart.svg</a></code></li>
+                    <li>&#x1F3E0; Home: <code><a href="../index.html">index.html</a></code></li>
                 </ul>
             </div>
         </div>
 
         <!-- Closing -->
         <div class="closing">
-            <p style="font-size: 1.3em; color: #00ff88; font-weight: 600;">Let's go, Brother. &#x1F91D;&#x1F3C6;</p>
+            <p style="font-size: 1.3em; color: #FFD700; font-weight: 600;">Let's go, Brother. &#x1F91D;&#x1F3C6;</p>
             <p class="fraternity" style="margin-top: 20px;">Alpha Phi Alpha Fraternity, Inc. - Beta Chapter</p>
         </div>
     </div>
