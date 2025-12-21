@@ -1,5 +1,5 @@
 <div align="center">
-<img src="beta_logo.jpg" alt="Beta Chapter Logo" width="200"/>
+<img src="../assets/beta_logo.jpg" alt="Beta Chapter Logo" width="200"/>
 </div>
 
 # 🚀 AI Learning Plan for Alpha Phi Alpha Brothers

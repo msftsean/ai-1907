@@ -1,5 +1,5 @@
 <div align="center">
-<img src="beta_logo.jpg" alt="Beta Chapter Logo" width="200"/>
+<img src="assets/beta_logo.jpg" alt="Beta Chapter Logo" width="200"/>
 </div>
 
 # 🚀 Alpha Phi Alpha AI Learning Path
@@ -16,9 +16,9 @@ Welcome, Brothers. This repository contains everything you need to master AI too
 
 ### 📖 Learning Materials
 - **[`LEARNING_PLAN.md`](LEARNING_PLAN.md)** - The complete 4-week AI learning curriculum with video links and structured phases
-- **[`alpha_learning_flowchart.svg`](alpha_learning_flowchart.svg)** - Visual flowchart showing your learning journey from start to mastery
-- **[`alpha_learning_flowchart.mmd`](alpha_learning_flowchart.mmd)** - Mermaid diagram source file
-- **[View the Flowchart](alpha_learning_flowchart.svg)** - Click to see the complete learning path visualization
+- **[`assets/alpha_learning_flowchart.svg`](assets/alpha_learning_flowchart.svg)** - Visual flowchart showing your learning journey from start to mastery
+- **[`assets/alpha_learning_flowchart.mmd`](assets/alpha_learning_flowchart.mmd)** - Mermaid diagram source file
+- **[View the Flowchart](assets/alpha_learning_flowchart.svg)** - Click to see the complete learning path visualization
 - **[`QUICK_REFERENCE.md`](QUICK_REFERENCE.md)** - Quick reference guide for AI tools and workflows
 
 ### 🎯 Quick Start
