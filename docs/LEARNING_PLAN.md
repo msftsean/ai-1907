@@ -5,7 +5,7 @@
 # 🚀 AI Learning Plan for Alpha Phi Alpha Brothers
 ## Your 4-Week Path to AI Mastery
 
-> *Sent with fraternity love from your brother at Microsoft AI Engineering*
+> *Engineered for you to succeed*
 
 ---
 
@@ -144,9 +144,9 @@ Let's make sure you're one of them. 🔥
 
 ---
 
-**Let's go, Brothers. 🤝🏆**
+**Let's go, Bros. 🤝🏆**
 
-*— Sent with fraternity love from your brother at Microsoft AI Engineering*
+*— Fraternally, Sean*
 
 **Alpha Phi Alpha Fraternity, Inc.**
 **Beta Chapter**
