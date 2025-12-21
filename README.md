@@ -17,7 +17,8 @@ Welcome, Brothers. This repository contains everything you need to master AI too
 ### 📖 Learning Materials
 - **[`LEARNING_PLAN.md`](LEARNING_PLAN.md)** - The complete 4-week AI learning curriculum with video links and structured phases
 - **[`alpha_learning_flowchart.svg`](alpha_learning_flowchart.svg)** - Visual flowchart showing your learning journey from start to mastery
-- **[`alpha_learning_flowchart.mmd`](alpha_learning_flowchart.mmd)** - Mermaid diagram version (can be rendered on GitHub)
+- **[`alpha_learning_flowchart.mmd`](alpha_learning_flowchart.mmd)** - Mermaid diagram source file
+- **[View the Flowchart](alpha_learning_flowchart.svg)** - Click to see the complete learning path visualization
 - **[`QUICK_REFERENCE.md`](QUICK_REFERENCE.md)** - Quick reference guide for AI tools and workflows
 
 ### 🎯 Quick Start
