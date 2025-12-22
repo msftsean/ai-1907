@@ -1,0 +1,952 @@
+/**
+ * Alpha AI Learning Site - Custom CSS
+ * Built on GitHub Primer CSS with fraternity color overrides
+ *
+ * Color Palette:
+ * - Primary: Black (#000000)
+ * - Accent: Old Gold (#CFB53B)
+ * - Success: WhatsApp Green (#25D366)
+ * - Text: Near-black (#24292f)
+ * - Muted: Darker gray (#57606a)
+ */
+
+/* ==========================================================================
+   CSS Custom Properties (Variables)
+   ========================================================================== */
+
+:root {
+  /* Fraternity Colors */
+  --alpha-gold: #CFB53B;
+  --alpha-gold-light: #e0c85c;
+  --alpha-gold-dark: #b89b2f;
+  --alpha-black: #000000;
+  --alpha-black-soft: #1a1a1a;
+
+  /* Functional Colors */
+  --whatsapp-green: #25D366;
+  --success-green: #2da44e;
+  --warning-yellow: #fff3cd;
+
+  /* Text Colors - High Contrast for Older Eyes */
+  --text-primary: #24292f;
+  --text-secondary: #57606a;
+  --text-on-dark: #ffffff;
+  --text-on-gold: #000000;
+
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f8fa;
+  --bg-dark: #000000;
+  --bg-dark-soft: #1a1a1a;
+
+  /* Typography - Larger for Older Eyes */
+  --font-size-base: 18px;
+  --font-size-lg: 1.125rem;  /* 20px */
+  --font-size-xl: 1.25rem;   /* 22px */
+  --line-height-base: 1.6;
+  --line-height-relaxed: 1.8;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+
+  /* Touch Targets - Minimum 48px for Accessibility */
+  --touch-target-min: 48px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-gold: 0 4px 12px rgba(207, 181, 59, 0.3);
+
+  /* Borders */
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+}
+
+/* ==========================================================================
+   Base Styles - Override Primer Defaults for Accessibility
+   ========================================================================== */
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+/* Larger, more readable headings */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: var(--space-sm);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: var(--space-sm);
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+p, li {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Higher contrast for muted text */
+.color-fg-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* Links with gold color */
+a {
+  color: var(--alpha-gold-dark);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--alpha-gold);
+}
+
+/* ==========================================================================
+   Custom Button Styles
+   ========================================================================== */
+
+/* Base button enhancements for larger touch targets */
+.btn {
+  min-height: var(--touch-target-min);
+  font-size: var(--font-size-lg);
+  padding: 12px 24px;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-large,
+.btn-lg {
+  min-height: 56px;
+  font-size: 1.25rem;
+  padding: 16px 32px;
+}
+
+/* Primary Gold Button */
+.btn-alpha-gold {
+  background: linear-gradient(135deg, var(--alpha-gold) 0%, var(--alpha-gold-dark) 100%);
+  color: var(--text-on-gold);
+  border: none;
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-alpha-gold:hover {
+  background: linear-gradient(135deg, var(--alpha-gold-light) 0%, var(--alpha-gold) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(207, 181, 59, 0.4);
+  color: var(--text-on-gold);
+}
+
+.btn-alpha-gold:active {
+  transform: translateY(0);
+}
+
+/* White Button (for use on gold backgrounds) */
+.btn-white {
+  background: var(--bg-primary);
+  color: var(--alpha-black);
+  border: none;
+}
+
+.btn-white:hover {
+  background: #f0f0f0;
+  color: var(--alpha-black);
+}
+
+/* WhatsApp Button */
+.btn-whatsapp {
+  background: var(--whatsapp-green);
+  color: white;
+  border: none;
+}
+
+.btn-whatsapp:hover {
+  background: #20bd5a;
+  color: white;
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero-section {
+  background: linear-gradient(135deg, var(--alpha-black) 0%, var(--bg-dark-soft) 100%);
+  color: var(--text-on-dark);
+  padding: var(--space-xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding: var(--space-2xl) 0;
+  }
+}
+
+.hero-section h1 {
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+}
+
+@media (min-width: 768px) {
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+}
+
+.hero-section .lead {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .hero-section .lead {
+    font-size: 1.5rem;
+  }
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.hero-stat {
+  background: rgba(207, 181, 59, 0.15);
+  border: 1px solid rgba(207, 181, 59, 0.3);
+  padding: 8px 16px;
+  border-radius: var(--border-radius-xl);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ==========================================================================
+   Reassurance Section
+   ========================================================================== */
+
+.reassurance-section {
+  background: var(--bg-secondary);
+  padding: var(--space-xl) 0;
+}
+
+.reassurance-section h2 {
+  color: var(--text-primary);
+}
+
+.comparison-box {
+  background: var(--bg-primary);
+  border: 1px solid #d0d7de;
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md);
+  text-align: left;
+}
+
+.comparison-box.highlighted {
+  border: 2px solid var(--alpha-gold);
+  box-shadow: var(--shadow-gold);
+}
+
+.comparison-box h3 {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.comparison-box p {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Video Preview Section
+   ========================================================================== */
+
+.video-preview-section {
+  padding: var(--space-xl) 0;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--border-radius-md);
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--alpha-black) 0%, var(--bg-dark-soft) 100%);
+  color: var(--text-on-dark);
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.video-placeholder-icon {
+  font-size: 4rem;
+  margin-bottom: var(--space-sm);
+  color: var(--alpha-gold);
+}
+
+/* ==========================================================================
+   Learning Journey Section
+   ========================================================================== */
+
+.learning-journey {
+  background: var(--bg-secondary);
+  padding: var(--space-xl) 0;
+}
+
+.week-card {
+  background: var(--bg-primary);
+  border: 1px solid #d0d7de;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  margin-bottom: var(--space-md);
+}
+
+.week-card-header {
+  background: var(--alpha-gold);
+  color: var(--text-on-gold);
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.week-card-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.week-card-header span {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.week-card-body {
+  padding: var(--space-md);
+}
+
+.week-card-body p {
+  margin-bottom: var(--space-sm);
+}
+
+.week-card-body ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.week-card-body li {
+  margin-bottom: var(--space-xs);
+  font-size: 1rem;
+}
+
+/* Pace Note Box */
+.pace-note {
+  background: var(--warning-yellow);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.pace-note h4 {
+  margin-bottom: var(--space-xs);
+}
+
+.pace-note p {
+  margin: 0;
+}
+
+.pace-note p + p {
+  margin-top: var(--space-xs);
+}
+
+/* ==========================================================================
+   Outcomes Section
+   ========================================================================== */
+
+.outcomes-section {
+  padding: var(--space-xl) 0;
+}
+
+.outcome-item {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.outcome-item:last-child {
+  border-bottom: none;
+}
+
+.outcome-check {
+  color: var(--alpha-gold);
+  font-size: 1.5rem;
+  margin-right: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.outcome-text {
+  font-size: var(--font-size-lg);
+}
+
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+
+.about-section {
+  padding: var(--space-xl) 0;
+  background: var(--bg-secondary);
+}
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--alpha-gold);
+  box-shadow: var(--shadow-lg);
+}
+
+.about-photo-placeholder {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--alpha-gold) 0%, var(--alpha-gold-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-on-gold);
+  font-size: 4rem;
+  font-weight: 700;
+  border: 4px solid var(--alpha-gold);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ==========================================================================
+   Final CTA Section
+   ========================================================================== */
+
+.final-cta {
+  background: linear-gradient(135deg, var(--alpha-gold) 0%, var(--alpha-gold-dark) 100%);
+  color: var(--text-on-gold);
+  padding: var(--space-xl) 0;
+  text-align: center;
+}
+
+.final-cta h2 {
+  color: var(--text-on-gold);
+  margin-bottom: var(--space-sm);
+}
+
+.final-cta p {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-md);
+  opacity: 0.9;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  background: var(--bg-secondary);
+  padding: var(--space-xl) 0 var(--space-lg);
+  border-top: 1px solid #d0d7de;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+}
+
+.footer-motto {
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-top: var(--space-xs);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: var(--space-xs);
+}
+
+.footer-links a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--alpha-gold);
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #d0d7de;
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+  text-align: center;
+}
+
+/* ==========================================================================
+   Fixed Help Button
+   ========================================================================== */
+
+.help-button-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.help-button-fixed .btn {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .help-button-fixed {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .help-button-fixed .btn {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ==========================================================================
+   Learning Plan Page Styles
+   ========================================================================== */
+
+.progress-header {
+  background: var(--bg-primary);
+  border: 1px solid #d0d7de;
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.progress-bar-container {
+  background: #e1e4e8;
+  border-radius: 8px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: linear-gradient(90deg, var(--success-green), #3fb950);
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+}
+
+.module-item {
+  padding: var(--space-sm);
+  border-bottom: 1px solid #d0d7de;
+}
+
+.module-item:last-child {
+  border-bottom: none;
+}
+
+.module-checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  accent-color: var(--alpha-gold);
+}
+
+.module-title {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.module-duration {
+  background: var(--alpha-gold);
+  color: var(--text-on-gold);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: var(--space-xs);
+}
+
+.module-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.module-completed .module-title {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+/* Week Navigation */
+.week-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid #d0d7de;
+}
+
+/* ==========================================================================
+   Quick Reference Page Styles
+   ========================================================================== */
+
+.search-box {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: var(--font-size-lg);
+  border: 1px solid #d0d7de;
+  border-radius: var(--border-radius-sm);
+  background: var(--bg-primary);
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: var(--alpha-gold);
+  box-shadow: 0 0 0 3px rgba(207, 181, 59, 0.2);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.reference-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reference-table th {
+  background: var(--bg-secondary);
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #d0d7de;
+}
+
+.reference-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.reference-table code {
+  background: rgba(207, 181, 59, 0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'SF Mono', 'Consolas', monospace;
+  font-size: 0.9em;
+  color: var(--alpha-gold-dark);
+}
+
+/* Tool Comparison Labels */
+.tool-label {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.tool-label-yes {
+  background: #dafbe1;
+  color: #1a7f37;
+}
+
+.tool-label-no {
+  background: #ffebe9;
+  color: #cf222e;
+}
+
+.tool-label-limited {
+  background: #fff8c5;
+  color: #9a6700;
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+/* Text utilities */
+.text-gold {
+  color: var(--alpha-gold) !important;
+}
+
+.text-gold-dark {
+  color: var(--alpha-gold-dark) !important;
+}
+
+.bg-gold {
+  background-color: var(--alpha-gold) !important;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, var(--alpha-gold) 0%, var(--alpha-gold-dark) 100%) !important;
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(135deg, var(--alpha-black) 0%, var(--bg-dark-soft) 100%) !important;
+}
+
+/* Border utilities */
+.border-gold {
+  border-color: var(--alpha-gold) !important;
+}
+
+/* Shadow utilities */
+.shadow-gold {
+  box-shadow: var(--shadow-gold) !important;
+}
+
+/* ==========================================================================
+   Responsive Utilities
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .container-lg {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-section {
+    padding: var(--space-lg) 0;
+  }
+
+  .about-photo,
+  .about-photo-placeholder {
+    width: 150px;
+    height: 150px;
+    font-size: 3rem;
+  }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  .help-button-fixed,
+  .btn,
+  nav {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+
+  .hero-section,
+  .final-cta {
+    background: #f0f0f0 !important;
+    color: #000 !important;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .week-card-header {
+    background: #f0f0f0 !important;
+    color: #000 !important;
+  }
+}
+
+/* ==========================================================================
+   Brotherhood Background Images
+   ========================================================================== */
+
+/* Base style for sections with background images */
+.bg-bros {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-bros::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  filter: grayscale(100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-bros > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Specific background images - add your images to assets/images/bros/ */
+.bg-bros-1::before {
+  background-image: url('../images/bros/bros-1.jpg');
+}
+
+.bg-bros-2::before {
+  background-image: url('../images/bros/bros-2.jpg');
+}
+
+.bg-bros-3::before {
+  background-image: url('../images/bros/bros-3.jpg');
+}
+
+.bg-bros-4::before {
+  background-image: url('../images/bros/bros-4.jpg');
+}
+
+.bg-bros-5::before {
+  background-image: url('../images/bros/bros-5.jpg');
+}
+
+/* Lighter opacity for dark sections */
+.hero-section.bg-bros::before {
+  opacity: 0.12;
+  filter: grayscale(100%) brightness(1.2);
+}
+
+/* Slightly more visible on light sections */
+.about-section.bg-bros::before,
+.reassurance-section.bg-bros::before {
+  opacity: 0.06;
+}
+
+/* For the inspiration/final CTA sections */
+.final-cta.bg-bros::before {
+  opacity: 0.1;
+  filter: grayscale(100%) brightness(1.3);
+}
+
+/* ==========================================================================
+   Accessibility Enhancements
+   ========================================================================== */
+
+/* Focus states */
+:focus {
+  outline: 2px solid var(--alpha-gold);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--alpha-gold);
+  outline-offset: 2px;
+}
+
+/* Skip to content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--alpha-gold);
+  color: var(--text-on-gold);
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
