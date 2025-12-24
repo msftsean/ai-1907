@@ -48,11 +48,14 @@ ai-1907/
 │   ├── js/
 │   │   └── main.js             # Progress tracking & interactions
 │   ├── images/
-│   │   └── bros/               # Brotherhood photos (backgrounds & headshot)
-│   ├── beta_logo.jpg           # Beta Chapter logo
-│   ├── alpha_learning_flowchart.svg  # Learning flowchart
-│   ├── favicon.ico             # Site favicon
-│   └── favicon-*.png           # Various favicon sizes
+│   │   ├── bros/               # Brotherhood photos (backgrounds & headshot)
+│   │   ├── beta_logo.jpg       # Beta Chapter logo
+│   │   └── alpha_learning_flowchart.svg  # Learning flowchart
+│   └── icons/
+│       ├── favicon.ico         # Site favicon
+│       ├── favicon-16x16.png   # Small favicon
+│       ├── favicon-32x32.png   # Medium favicon
+│       └── apple-touch-icon.png # iOS icon
 ├── README.md                   # This file
 └── STRUCTURE.md                # Technical documentation
 ```
