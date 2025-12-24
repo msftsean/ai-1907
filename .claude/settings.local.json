@@ -10,7 +10,10 @@
       "Bash(python:*)",
       "Bash(git branch:*)",
       "Bash(git checkout:*)",
-      "Bash(npx serve)"
+      "Bash(npx serve)",
+      "Bash(tasklist:*)",
+      "Bash(findstr:*)",
+      "Bash(timeout:*)"
     ]
   }
 }

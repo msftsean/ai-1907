@@ -886,10 +886,35 @@ a:hover {
   background-image: url('../images/bros/bros-5.jpg');
 }
 
+.bg-bros-6::before {
+  background-image: url('../images/bros/bros-6.jpg');
+}
+
+.bg-bros-7::before {
+  background-image: url('../images/bros/bros-7.jpg');
+}
+
+.bg-bros-8::before {
+  background-image: url('../images/bros/bros-8.jpg');
+}
+
+.bg-bros-9::before {
+  background-image: url('../images/bros/bros-9.jpg');
+}
+
+.bg-bros-10::before {
+  background-image: url('../images/bros/bros-10.jpg');
+}
+
+.bg-bros-11::before {
+  background-image: url('../images/bros/bros-11.jpg');
+}
+
 /* Lighter opacity for dark sections */
 .hero-section.bg-bros::before {
-  opacity: 0.12;
+  opacity: 0.15;
   filter: grayscale(100%) brightness(1.2);
+  background-position: center top;
 }
 
 /* Slightly more visible on light sections */
