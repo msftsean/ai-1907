@@ -83,6 +83,8 @@ Custom CSS adds fraternity branding and components that need personality beyond 
 | Module Item | `.module-item` | Checkbox modules in learning plan |
 | Progress Bar | `.progress-bar-fill` | Visual progress indicator |
 | Help Button | `.help-button-fixed` | Fixed position help button |
+| Brotherhood BG | `.bg-bros`, `.bg-bros-1` to `.bg-bros-11` | Subtle brotherhood photo backgrounds |
+| About Photo | `.about-photo` | Circular headshot styling |
 
 #### Hybrid Approach (70/30 Split)
 

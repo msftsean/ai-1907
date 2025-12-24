@@ -6,7 +6,7 @@
 
 **Created by Sean Gayle, Beta '91**
 
-[View Live Site](https://msftsean.github.io/ai-1907/) | [Learning Plan](docs/learning-plan.html) | [Quick Reference](docs/quick-reference.html)
+[View Live Site](https://msftsean.github.io/ai-1907/) · [Learning Plan](https://msftsean.github.io/ai-1907/docs/learning-plan.html) · [Quick Reference](https://msftsean.github.io/ai-1907/docs/quick-reference.html)
 
 </div>
 
@@ -47,7 +47,8 @@ ai-1907/
 │   │   └── custom.css          # Custom styles (fraternity branding)
 │   ├── js/
 │   │   └── main.js             # Progress tracking & interactions
-│   ├── images/                 # Placeholder for additional images
+│   ├── images/
+│   │   └── bros/               # Brotherhood photos (backgrounds & headshot)
 │   ├── beta_logo.jpg           # Beta Chapter logo
 │   ├── alpha_learning_flowchart.svg  # Learning flowchart
 │   ├── favicon.ico             # Site favicon
@@ -96,29 +97,10 @@ In `docs/learning-plan.html`, copy an existing module block:
 Search for `your@email.com` across all HTML files and replace with your actual email address.
 
 #### Adding Your Photo
-1. Add your photo to `assets/` folder (e.g., `sean-photo.jpg`)
-2. In `index.html`, replace the placeholder:
-```html
-<!-- Change this: -->
-<div class="about-photo-placeholder">SG</div>
+Photo is located at `assets/images/bros/headshot2025.png` and displayed in the About section.
 
-<!-- To this: -->
-<img src="assets/sean-photo.jpg" alt="Sean Gayle" class="about-photo">
-```
-
-#### Adding a Demo Video
-In `index.html`, find the video placeholder and replace:
-
-```html
-<!-- Replace the video-placeholder div with: -->
-<iframe
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube.com/embed/YOUR-VIDEO-ID"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-```
+#### Demo Video
+Demo video is embedded from YouTube in the Video Preview section.
 
 ### How to Customize Colors
 
@@ -221,7 +203,7 @@ To my brothers: May this resource help you harness the power of AI to build stro
 ## Status
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
-![Version](https://img.shields.io/badge/Version-2.0-blue)
+![Version](https://img.shields.io/badge/Version-2.1-blue)
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-Dec%202025-orange)
 
 ---
