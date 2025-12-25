@@ -89,7 +89,7 @@ You're developing the muscle memory of asking AI the right questions. This is wh
 ## ⚙️ PHASE 4: PUT IT TO WORK (Week 3-4)
 
 ### 🛠️ Enovair: AI for Business Automation
-**🔗 https://www.youtube.com/@Enovair**
+**🔗 https://www.youtube.com/@EnovairPartners**
 
 Their YouTube channel focuses on how business owners use AI tools to automate decisions and scale faster.
 

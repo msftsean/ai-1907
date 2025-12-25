@@ -28,7 +28,7 @@
 ### PHASE 4: Automation (Week 3-4)
 | Video | Creator | Link |
 |-------|---------|------|
-| AI for Business Automation | Enovair | https://www.youtube.com/@Enovair |
+| AI for Business Automation | Enovair | https://www.youtube.com/@EnovairPartners |
 
 ---
 
