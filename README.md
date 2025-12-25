@@ -4,7 +4,7 @@
 # Alpha Phi Alpha AI Learning Path
 ## "Learning AI, Together" - Beta Chapter
 
-**Created by Sean Gayle, Beta '91**
+**Created by Sean Gayle**
 
 [View Live Site](https://msftsean.github.io/ai-1907/) · [Learning Plan](https://msftsean.github.io/ai-1907/docs/learning-plan.html) · [Quick Reference](https://msftsean.github.io/ai-1907/docs/quick-reference.html)
 
@@ -23,14 +23,44 @@ This is a simple, supportive learning path designed to help Alpha Phi Alpha Beta
 
 ---
 
+## The 4-Week Curriculum
+
+### Week 1: Understand the Power (~35 min)
+See exactly how AI tools work together - this is the "aha" moment
+- **20+ AI Hacks That Save Hours Every Day** - Learn practical ways to use AI in everyday life
+- **Best Ways to Use NotebookLM** - Organize your data into actionable intelligence
+
+### Week 2: Understanding AI Workflows (~17 min)
+You don't need more tools - you need better workflows
+- **8 AI Workflows That Actually Work** - Chain tools together like a personal team
+- Reference table with all 8 workflows from Grace Leung's video
+
+### Week 3: Using AI for Productivity (~30 min)
+Learn the 6 essential skills that separate casual AI users from power users
+- **6 AI Skills 99% of People Don't Know** - Alicia from Enovair Partners breaks down the essentials:
+  1. Tool Selection
+  2. Problem Clarification
+  3. Effective AI Communication
+  4. Verification
+  5. Workflow Orchestration
+  6. The Human Polish
+
+### Week 4: Make It Your Own (~1 hour)
+This is what separates talkers from doers
+- Pick ONE workflow from Week 2
+- Run ONE experiment (30-60 min)
+- Message Sean what you discovered
+
+---
+
 ## Quick Start
 
 1. Visit the [live site](https://msftsean.github.io/ai-1907/)
 2. Click "Start Week 1"
-3. Follow the 4-week curriculum
+3. Follow the 4-week curriculum (5 modules total)
 4. Track your progress (saved automatically in your browser)
 5. Run your experiment in Week 4
-6. Share results with your brother
+6. Share results with your brothers
 
 ---
 
@@ -50,6 +80,7 @@ ai-1907/
 │   ├── images/
 │   │   ├── bros/               # Brotherhood photos (backgrounds & headshot)
 │   │   ├── beta_logo.jpg       # Beta Chapter logo
+│   │   ├── alpha-crest.png     # Alpha Phi Alpha crest (nav/footer)
 │   │   └── alpha_learning_flowchart.svg  # Learning flowchart
 │   └── icons/
 │       ├── favicon.ico         # Site favicon
@@ -94,10 +125,7 @@ In `docs/learning-plan.html`, copy an existing module block:
 **Important:**
 - Give each module a unique `data-module-id` (e.g., `week2-module3`)
 - Update the `id` and `for` attributes to match
-- Update the progress text in the header (e.g., "0 of 13 modules complete")
-
-#### Updating Contact Information
-Search for `your@email.com` across all HTML files and replace with your actual email address.
+- Update the progress text in the header (currently "0 of 5 modules complete")
 
 #### Adding Your Photo
 Photo is located at `assets/images/bros/headshot2025.png` and displayed in the About section.
@@ -189,6 +217,7 @@ No build step required - just push HTML files directly.
 - **NotebookLM**: https://notebooklm.google.com
 - **Claude**: https://claude.ai
 - **Gemini**: https://gemini.google.com
+- **Enovair Partners**: https://www.youtube.com/@EnovairPartners
 - **Primer CSS Docs**: https://primer.style/css/
 
 ---
@@ -206,7 +235,7 @@ To my brothers: May this resource help you harness the power of AI to build stro
 ## Status
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
-![Version](https://img.shields.io/badge/Version-2.1-blue)
+![Version](https://img.shields.io/badge/Version-3.0-blue)
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-Dec%202025-orange)
 
 ---
