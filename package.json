@@ -1,0 +1,30 @@
+{
+  "name": "ai-1907",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r <img src=\"assets/images/beta_logo.jpg\" alt=\"Beta Chapter Logo\" width=\"200\"/>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "serve": "npx serve -l 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msftsean/ai-1907.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/msftsean/ai-1907/issues"
+  },
+  "homepage": "https://github.com/msftsean/ai-1907#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "serve": "^14.2.5"
+  }
+}
